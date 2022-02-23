@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;500;700&display=swap");
+* {
+  font-family: 'Mulish', sans-serif;
+}
+
+.cst-alert {
+  padding: 7px;
+  z-index: 99;
+  background-color: #e1e0e0;
+  color: #d8722e;
+  font-weight: light;
+  border: none;
+  border-radius: 0;
+}
+
+.cst-highlight {
+  color: #d8722e;
+}
+
+.cst-clockout-invalid {
+  font-weight: bold;
+  color: #d01839;
+}
+
+.cst-capitalize {
+  text-transform: capitalize;
+}
+
+th, td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.cst-sidebar-container {
+  background-color: #d8722e;
+  color: #423f3f;
+  width: 380px;
+  min-height: 100vh;
+}
+
+.cst-sidebar-emblem-cap {
+  text-decoration: none;
+  color: #ffffff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.cst-sidebar-emblem-cap:hover {
+  color: #cccccc;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.cst-link {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 20px 40px 20px 30px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.cst-link:hover {
+  background: #e08f59;
+  color: #ffffff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.cst-active {
+  background-color: #e8ac84;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 20px 8px 20px 80px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.cst-active:hover {
+  color: #ffffff;
+}
+
+.cst-navlink-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cst-content-container {
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.cst-input {
+  border: 1px solid #d8722e;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.cst-input-search {
+  border: 1px solid black;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.cst-input-search:focus {
+  border: 1px solid #d8722e;
+  -webkit-box-shadow: 0 0px 1px #d8722e inset, 0 0 7px #d8722e;
+          box-shadow: 0 0px 1px #d8722e inset, 0 0 7px #d8722e;
+}
+
+.cst-input:focus {
+  border: 1px solid #d8722e;
+  -webkit-box-shadow: 0 0px 1px #d8722e inset, 0 0 7px #d8722e;
+          box-shadow: 0 0px 1px #d8722e inset, 0 0 7px #d8722e;
+}
+
+.cst-input-secondary {
+  border: 1px solid #d01839;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.cst-button-pop {
+  background-color: #ffffff;
+  border: 0;
+  border-radius: 5px;
+  color: #d8722e;
+  fill: #d8722e;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  padding: 4px 10px 4px 10px;
+}
+
+.cst-button-pop:hover, .cst-button-pop:focus {
+  background-color: #d8722e;
+  color: #ffffff;
+  fill: #ffffff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.cst-button-primary {
+  background-color: #d8722e;
+  color: #ffffff;
+  border: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.cst-button-primary:hover, .cst-button-primary:focus {
+  background: #a95720;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.cst-button-secondary {
+  background-color: #d01839;
+  color: #ffffff;
+  border: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.cst-button-secondary:hover, .cst-button-secondary:focus, .cst-button-secondary-full:hover, .cst-button-secondary-full:focus {
+  background: #99122a;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.cst-button-secondary-full {
+  background-color: #d01839;
+  color: #ffffff;
+  width: 100%;
+  border: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border-radius: 12px;
+}
+
+.cst-button-secondary-full:disabled {
+  background-color: #a2132c;
+}
+
+.cst-dateTime-container {
+  border-top: 3px double #d8722e;
+  border-bottom: 3px double #d8722e;
+  color: #d8722e;
+}
+
+.cst-border-attended {
+  position: absolute;
+  background-color: #d8722e;
+  width: 6px;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.cst-border-attending {
+  position: absolute;
+  background-color: #d01839;
+  width: 6px;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.cst-dropdown-pop {
+  background-color: #ffffff;
+  border: 2px solid #d8722e;
+  color: #d8722e;
+  border-radius: 8px;
+  padding: 8px 12px 8px 12px;
+}
+
+.cst-dropdown-pop:hover {
+  background-color: #d8722e;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+.cst-dropdown-pop:focus {
+  background-color: #e08f59;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+/*# sourceMappingURL=primary-style.css.map */

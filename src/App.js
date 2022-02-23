@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './style/primary-style.css';
+import Sidebar from './components/Sidebar';
+import {BrowserRouter as Router, Navigate, Routes, Route} from 'react-router-dom';
+
+import EmployeeListPage from './pages/EmployeeListPage';
+import AttendanceManagerPage from './pages/AttendanceManagerPage';
+import AttendanceReportPage from './pages/AttendanceReportPage';
+import PageNotFound from './pages/PageNotFound';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className='d-flex flex-row'>
+        <Sidebar/>
+          <div className='w-100'>
+            <Routes>
+              <Route path="/" element={<EmployeeListPage/>} />
+              <Route path="/attendance" element={<AttendanceManagerPage/>} />
+              <Route path="/attendance-report" element={<AttendanceReportPage/>} />
+              <Route path="*" element={<Navigate to="/404" />} />
+              <Route path="/404" element={<PageNotFound/>} />
+            </Routes>
+          </div>
+
+      </div>
+    </Router>
   );
 }
 

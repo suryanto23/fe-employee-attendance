@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;500;700&display=swap');
+
+$color-primary: #d8722e;
+$color-secondary: #d01839;
+$color-light: #ffffff;
+
+*{
+    font-family: 'Mulish', sans-serif;
+}
+
+.cst-alert{
+    padding: 7px;
+    z-index: 99;
+    background-color: rgb(225, 224, 224);
+    color: $color-primary;
+    font-weight: light;
+    border: none;
+    border-radius: 0;
+}
+
+.cst-highlight{
+    color: $color-primary;
+}
+
+.cst-clockout-invalid{
+    font-weight: bold;
+    color: $color-secondary;
+}
+
+.cst-capitalize{
+    text-transform: capitalize;
+}
+
+th, td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.cst-sidebar-container{
+    background-color: $color-primary;
+    color: rgb(66, 63, 63);
+    width: 380px;
+    min-height: 100vh;
+}
+
+.cst-sidebar-emblem-cap{
+    text-decoration: none;
+    color: $color-light;
+    transition: 0.2s;
+
+    &:hover{
+        color: darken($color-light , 20%);
+        transition: 0.2s;
+    }
+}
+
+.cst-link{
+    text-decoration: none;
+    color: $color-light;
+    padding: 20px 40px 20px 30px;
+    transition: 0.2s;
+
+    &:hover{
+        background: lighten($color-primary , 10%);
+        color: $color-light;
+        transition: 0.2s;
+    }
+}
+
+.cst-active{
+    background-color: lighten($color-primary , 20%);
+    text-decoration: none;
+    color: $color-light;
+    padding: 20px 8px 20px 80px;
+    transition: 0.2s;
+    
+    &:hover{
+        color: $color-light;
+    }
+}
+
+.cst-navlink-flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cst-content-container{
+    padding-left: 120px ;
+    padding-right: 120px;
+}
+
+.cst-input{
+    border: 1px solid $color-primary;
+    padding: 12px;
+    border-radius: 10px;
+
+    &-search{
+        border: 1px solid black;
+        padding: 8px;
+        border-radius: 10px;
+
+        &:focus{
+            border: 1px solid $color-primary;
+            box-shadow: 0 0px 1px $color-primary inset, 0 0 7px $color-primary;
+        }
+    }
+
+    &:focus{
+        border: 1px solid $color-primary;
+        box-shadow: 0 0px 1px $color-primary inset, 0 0 7px $color-primary;
+    }
+}
+
+.cst-input-secondary{
+    border: 1px solid $color-secondary;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.cst-button-pop{
+    background-color: $color-light;
+    border: 0;
+    border-radius: 5px ;
+    color: $color-primary;
+    fill: $color-primary;
+    transition: 0.2s;
+    padding: 4px 10px 4px 10px;
+    &:hover, &:focus{
+        background-color: $color-primary;
+        color: $color-light;
+        fill: $color-light;
+        box-shadow: none;
+        transition: 0.2s;
+    }
+}
+
+.cst-button-primary{
+    background-color: $color-primary;
+    color: $color-light;
+    border: 0;
+    transition: 0.2s;
+
+    &:hover, &:focus{
+       background: darken($color-primary , 12%);
+       box-shadow: none;
+    }
+}
+
+.cst-button-secondary{
+    background-color: $color-secondary;
+    color: $color-light;
+    border: 0;
+    transition: 0.2s;
+
+    &:hover, &:focus, &-full:hover, &-full:focus{
+       background: darken($color-secondary , 12%);
+       box-shadow: none;
+    }
+
+    &-full{
+        background-color: $color-secondary;
+        color: $color-light;
+        width: 100%;
+        border: 0;
+        transition: 0.2s;
+        border-radius: 12px;
+
+            &:disabled{
+                background-color: darken($color-secondary , 10%);
+            }
+    }   
+}
+
+.cst-dateTime-container{
+    border-top: 3px double $color-primary;
+    border-bottom: 3px double $color-primary;
+    color: $color-primary;
+}
+
+.cst-border-attended{
+    position: absolute;
+    background-color: $color-primary;
+    width: 6px;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.cst-border-attending{
+    position: absolute;
+    background-color: $color-secondary;
+    width: 6px;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.cst-dropdown-pop{
+    background-color: $color-light;
+    border: 2px solid $color-primary;
+    color: $color-primary;
+    border-radius: 8px;
+    padding: 8px 12px 8px 12px;
+
+    &:hover{
+        background-color: $color-primary ;
+        border: 2px solid $color-light;
+        color: $color-light;        
+    }
+
+    &:focus{
+        background-color: lighten($color-primary, 10%);
+        color: $color-light;
+        border:  2px solid $color-light;;
+        box-shadow: none;
+    }
+}
